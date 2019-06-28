@@ -5,20 +5,33 @@ class DataComp extends Component {
     this.state = { principal: "0", months: "0" };
   }
   handlePrincipalChange(event) {
+    //taking the values
     var value = event.target.value;
+
+    //checking is a number
     if (!isNaN(value)) {
+      //updating the state values
       this.setState({ principal: event.target.value });
+
+      //Sending the data to parent component listener
       this.props.principalDataEvent(event.target.value);
     }
   }
   handleMonthsChange(event) {
+    //taking the values
     var value = event.target.value;
+
+    //checking is a number
     if (!isNaN(value)) {
+      //updating the state values
       this.setState({ months: event.target.value });
+
+      //Sending the data to parent component listener
       this.props.monthsDataEvent(event.target.value);
     }
   }
 
+  //binding to access everywhere
   handleMonthsChange = this.handleMonthsChange.bind(this);
   handlePrincipalChange = this.handlePrincipalChange.bind(this);
 
