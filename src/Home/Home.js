@@ -56,7 +56,7 @@ class Home extends Component {
       "";
 
     axios.get(urlWithData).then(res => {
-      // save the reasult in the state
+      // save the result in the state
       const rData = res.data;
       console.log("Data recevied..");
       this.setState({
