@@ -18,23 +18,10 @@ class DataComp extends Component {
       this.props.monthsDataEvent(event.target.value);
     }
   }
-  handleSubmit(event) {
-    if (
-      this.state.months >= 6 &&
-      this.state.months <= 24 &&
-      this.state.principal >= 500 &&
-      this.state.principal <= 5000
-    ) {
-      this.props.dataEvent(this.state);
-    } else {
-      alert("Check input");
-    }
-  }
 
   handleMonthsChange = this.handleMonthsChange.bind(this);
   handlePrincipalChange = this.handlePrincipalChange.bind(this);
 
-  handleSubmit = this.handleSubmit.bind(this);
   render() {
     return (
       <div>
@@ -62,14 +49,6 @@ class DataComp extends Component {
                   value={this.state.months}
                   onChange={this.handleMonthsChange.bind(this)}
                 />
-                <br />
-                {/* <button
-                  type="button"
-                  className="btn btn-sub"
-                  onClick={this.handleSubmit}
-                >
-                  Submit
-                </button> */}
               </form>
             </b>
           </div>
