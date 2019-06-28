@@ -99,19 +99,14 @@ class Home extends Component {
               monthsDataEvent={this.handleMonthsDataEvent}
             />
           </div>
+
           <div
             className={
-              this.state.dataSending == "False" ? "  loading-invisible" : ""
+              this.state.dataSending == "False"
+                ? "  col-sm"
+                : "col-sm start-color-change-anim"
             }
           >
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <div class="spinner-border text-danger" role="status" />
-          </div>
-          <div className="col-sm">
             <ResComp
               interestRate={this.state.interestRate}
               monthlyPayment={this.state.monthlyPayment}

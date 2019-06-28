@@ -37,3 +37,21 @@
 .loading-invisible {
   visibility: hidden;
 }
+
+.start-color-change-anim {
+  animation: color-changing-anim 1.5s infinite !important;
+}
+@keyframes color-changing-anim {
+  0% {
+    color: black;
+  }
+  50% {
+    color: #fd9711;
+  }
+  80% {
+    color: #dc3545;
+  }
+  100% {
+    color: black;
+  }
+}
