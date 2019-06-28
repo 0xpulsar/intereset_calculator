@@ -9,7 +9,8 @@ const initialState = {
   currency: "USD",
   months: "0",
   principal: "0",
-  dataChange: "False"
+  dataChange: "False",
+  dataSending: "False"
 };
 class Home extends Component {
   constructor(props) {
@@ -28,7 +29,7 @@ class Home extends Component {
 
   componentDidMount() {
     this.interval = setInterval(() => {
-      console.log(this.state.dataChange);
+      //console.log(this.state.dataChange);
       if (
         this.state.months >= 6 &&
         this.state.months <= 24 &&
@@ -43,6 +44,7 @@ class Home extends Component {
         // MonthsINP.classList.remove("invalid-input");
         //Sending data
         this.handleDataEvent();
+        this.setState({ dataSending: "True" });
         console.log("Data send..");
       } else {
         //color change to red (add class name)
@@ -70,13 +72,15 @@ class Home extends Component {
       // save the result in the state
       const rData = res.data;
       console.log("Data recevied..");
+
       this.setState({
         interestRate: rData.interestRate,
         monthlyPayment: rData.monthlyPayment.amount,
         currency: rData.monthlyPayment.currency,
         months: rData.numPayments,
         principal: rData.principal.amount,
-        dataChange: "False"
+        dataChange: "False",
+        dataSending: "False"
       });
     });
   }
@@ -94,6 +98,20 @@ class Home extends Component {
               principalDataEvent={this.handlePrincipalDataEvent}
               monthsDataEvent={this.handleMonthsDataEvent}
             />
+          </div>
+          <div
+            className={
+              this.state.dataSending == "False"
+                ? "col-sm  loading-invisible"
+                : "col-sm  "
+            }
+          >
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="spinner-border text-danger" role="status" />
           </div>
           <div className="col-sm">
             <ResComp

@@ -22,3 +22,7 @@
 .invalid-input:focus {
   outline: 1px solid #dc3545;
 }
+
+.loading-invisible {
+  visibility: hidden;
+}
