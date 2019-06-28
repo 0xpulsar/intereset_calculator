@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./nav.css";
 class Nav extends Component {
   constructor(props) {
     super(props);
@@ -15,7 +16,7 @@ class Nav extends Component {
             className="d-inline-block align-top"
             alt=""
           />
-          fullthrottlelabs
+          <b>FullThrottle Labs</b>
         </a>
       </nav>
     );

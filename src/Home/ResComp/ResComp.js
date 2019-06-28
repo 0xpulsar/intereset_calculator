@@ -28,7 +28,7 @@ class ResComp extends Component {
               </b>
               <br />
               Duration:
-              <b>{this.props.months}</b>
+              <b>{this.props.months}</b> months
             </b>
           </div>
         </div>
