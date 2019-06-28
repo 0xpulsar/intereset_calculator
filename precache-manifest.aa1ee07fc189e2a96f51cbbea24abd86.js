@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "231e7bbb36398610c4ff237ed0541f42",
+    "revision": "70fd523904ba1bdf54520de4c08c5d31",
     "url": "/intereset_calculator/index.html"
   },
   {
-    "revision": "54fe185ee42bd7b3debf",
-    "url": "/intereset_calculator/static/css/main.35993f21.chunk.css"
+    "revision": "a49563ba4dfdc0b25eef",
+    "url": "/intereset_calculator/static/css/main.e5a9c5f4.chunk.css"
   },
   {
     "revision": "74661345f94ea5523c0e",
     "url": "/intereset_calculator/static/js/2.ef28a6bb.chunk.js"
   },
   {
-    "revision": "54fe185ee42bd7b3debf",
-    "url": "/intereset_calculator/static/js/main.f7c1b7b7.chunk.js"
+    "revision": "a49563ba4dfdc0b25eef",
+    "url": "/intereset_calculator/static/js/main.f35880a8.chunk.js"
   },
   {
     "revision": "39d40ed92375a917fb36",
