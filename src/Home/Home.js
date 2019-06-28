@@ -101,9 +101,7 @@ class Home extends Component {
           </div>
           <div
             className={
-              this.state.dataSending == "False"
-                ? "col-sm  loading-invisible"
-                : "col-sm  "
+              this.state.dataSending == "False" ? "  loading-invisible" : ""
             }
           >
             <br />
