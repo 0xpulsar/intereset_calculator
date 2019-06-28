@@ -8,7 +8,8 @@ const initialState = {
   monthlyPayment: "0",
   currency: "USD",
   months: "0",
-  principal: "0"
+  principal: "0",
+  dataChange: "False"
 };
 class Home extends Component {
   constructor(props) {
@@ -17,26 +18,26 @@ class Home extends Component {
   }
 
   handlePrincipalDataEvent(data) {
-    // console.log(data);
-
-    this.setState({ principal: data });
+    this.setState({ principal: data, dataChange: "True" });
   }
   handleMonthsDataEvent(data) {
     // console.log(data);
 
-    this.setState({ months: data });
+    this.setState({ months: data, dataChange: "True" });
   }
 
   componentDidMount() {
     this.interval = setInterval(() => {
+      console.log(this.state.dataChange);
       if (
         this.state.months >= 6 &&
         this.state.months <= 24 &&
         this.state.principal >= 500 &&
-        this.state.principal <= 5000
+        this.state.principal <= 5000 &&
+        this.state.dataChange == "True"
       ) {
-        // this.handleDataEvent();
-
+        //Sending data
+        this.handleDataEvent();
         console.log("Data send..");
       }
     }, 2000);
@@ -53,18 +54,18 @@ class Home extends Component {
       "&numMonths=" +
       parseInt(this.state.months) +
       "";
-    //console.log(this.state);
 
     axios.get(urlWithData).then(res => {
       // save the reasult in the state
       const rData = res.data;
-      // console.log(rData);
+      console.log("Data recevied..");
       this.setState({
         interestRate: rData.interestRate,
         monthlyPayment: rData.monthlyPayment.amount,
         currency: rData.monthlyPayment.currency,
         months: rData.numPayments,
-        principal: rData.principal.amount
+        principal: rData.principal.amount,
+        dataChange: "False"
       });
     });
   }
