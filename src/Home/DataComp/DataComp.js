@@ -26,7 +26,7 @@ class DataComp extends Component {
     return (
       <div>
         <div className="card">
-          <div className="card-body">
+          <div className="card-body text-left">
             <h2 className="card-title">
               <b>Data Input</b>
             </h2>

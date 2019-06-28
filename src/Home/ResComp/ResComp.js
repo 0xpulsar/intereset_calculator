@@ -9,11 +9,12 @@ class ResComp extends Component {
     return (
       <div>
         <div className="card">
-          <div className="card-body">
+          <div className="card-body text-left">
             <h2 className="card-title">
               <b>Result</b>
             </h2>
-            <b className="card-text">
+
+            <b className="card-text ">
               Principal:{" "}
               <b>
                 {this.props.principal} {this.props.currency}
