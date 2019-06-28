@@ -8,10 +8,10 @@ class ResComp extends Component {
   render() {
     return (
       <div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Result</h5>
-            <b class="card-text">
+        <div className="card">
+          <div className="card-body">
+            <h5 className="card-title">Result</h5>
+            <b className="card-text">
               Principal:{" "}
               <b>
                 {this.props.principal} {this.props.currency}

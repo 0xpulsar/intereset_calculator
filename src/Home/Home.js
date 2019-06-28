@@ -39,12 +39,12 @@ class Home extends Component {
   handleDataEvent = this.handleDataEvent.bind(this);
   render() {
     return (
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm">
             <DataComp dataEvent={this.handleDataEvent} />
           </div>
-          <div class="col-sm">
+          <div className="col-sm">
             <ResComp
               interestRate={this.state.interestRate}
               monthlyPayment={this.state.monthlyPayment}

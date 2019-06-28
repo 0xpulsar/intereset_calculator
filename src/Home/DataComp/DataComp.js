@@ -33,14 +33,14 @@ class DataComp extends Component {
   render() {
     return (
       <div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Data Input</h5>
-            <b class="card-text">
+        <div className="card">
+          <div className="card-body">
+            <h5 className="card-title">Data Input</h5>
+            <b className="card-text">
               <form>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="principal"
                   placeholder="Principal Amount ($500 - $5000)"
                   value={this.state.principal}
@@ -49,7 +49,7 @@ class DataComp extends Component {
                 <br />
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="Months"
                   placeholder="Months ( 6 - 24)"
                   value={this.state.months}
@@ -58,7 +58,7 @@ class DataComp extends Component {
                 <br />
                 <button
                   type="button"
-                  class="btn btn-primary"
+                  className="btn btn-primary"
                   onClick={this.handleSubmit}
                 >
                   Submit
