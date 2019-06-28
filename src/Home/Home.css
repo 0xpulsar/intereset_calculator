@@ -4,16 +4,23 @@
   margin: 30px;
 }
 .card:hover {
-  animation: card-shadow-on-hover 1s infinite;
+  animation: card-shadow-on-hover 2s infinite;
 }
 
 @keyframes card-shadow-on-hover {
   0% {
     box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
   }
-  100% {
+  50% {
     box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
   }
+  100% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.form-control {
+  border-radius: 15px;
 }
 
 .invalid-input {
