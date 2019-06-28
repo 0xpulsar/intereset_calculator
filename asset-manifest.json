@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/intereset_calculator/static/css/main.4bce8118.chunk.css",
-    "main.js": "/intereset_calculator/static/js/main.9562668e.chunk.js",
-    "main.js.map": "/intereset_calculator/static/js/main.9562668e.chunk.js.map",
+    "main.js": "/intereset_calculator/static/js/main.612991fb.chunk.js",
+    "main.js.map": "/intereset_calculator/static/js/main.612991fb.chunk.js.map",
     "runtime~main.js": "/intereset_calculator/static/js/runtime~main.43a589d5.js",
     "runtime~main.js.map": "/intereset_calculator/static/js/runtime~main.43a589d5.js.map",
     "static/js/2.6e21166f.chunk.js": "/intereset_calculator/static/js/2.6e21166f.chunk.js",
     "static/js/2.6e21166f.chunk.js.map": "/intereset_calculator/static/js/2.6e21166f.chunk.js.map",
     "index.html": "/intereset_calculator/index.html",
-    "precache-manifest.878a577884268d41e173cc75f48d763a.js": "/intereset_calculator/precache-manifest.878a577884268d41e173cc75f48d763a.js",
+    "precache-manifest.4dc95eb7429eae9cfb3a789545b7264e.js": "/intereset_calculator/precache-manifest.4dc95eb7429eae9cfb3a789545b7264e.js",
     "service-worker.js": "/intereset_calculator/service-worker.js",
     "static/css/main.4bce8118.chunk.css.map": "/intereset_calculator/static/css/main.4bce8118.chunk.css.map",
     "static/media/logo.svg": "/intereset_calculator/static/media/logo.5d5d9eef.svg"
