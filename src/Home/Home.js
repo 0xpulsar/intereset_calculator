@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import DataComp from "./DataComp/DataComp";
 import ResComp from "./ResComp/ResComp";
 import axios from "axios";
+import "./Home.css";
 class Home extends Component {
   constructor(props) {
     super(props);

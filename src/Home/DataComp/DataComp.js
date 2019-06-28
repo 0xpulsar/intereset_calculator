@@ -35,7 +35,9 @@ class DataComp extends Component {
       <div>
         <div className="card">
           <div className="card-body">
-            <h5 className="card-title">Data Input</h5>
+            <h2 className="card-title">
+              <b>Data Input</b>
+            </h2>
             <b className="card-text">
               <form>
                 <input
@@ -58,7 +60,7 @@ class DataComp extends Component {
                 <br />
                 <button
                   type="button"
-                  className="btn btn-primary"
+                  className="btn btn-sub"
                   onClick={this.handleSubmit}
                 >
                   Submit

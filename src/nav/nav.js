@@ -6,13 +6,13 @@ class Nav extends Component {
   }
   render() {
     return (
-      <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
+      <nav className="navbar navbar-light bg-light">
+        <a className="navbar-brand" href="#">
           <img
             src="https://fullthrottlelabs.com/img/logo/logo-2.png"
             width="80"
             height="30"
-            class="d-inline-block align-top"
+            className="d-inline-block align-top"
             alt=""
           />
           fullthrottlelabs

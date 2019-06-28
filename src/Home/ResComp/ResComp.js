@@ -10,13 +10,17 @@ class ResComp extends Component {
       <div>
         <div className="card">
           <div className="card-body">
-            <h5 className="card-title">Result</h5>
+            <h2 className="card-title">
+              <b>Result</b>
+            </h2>
             <b className="card-text">
               Principal:{" "}
               <b>
                 {this.props.principal} {this.props.currency}
               </b>{" "}
-              Interest Rate: <b>{this.props.interestRate}%</b>.<br />
+              <br />
+              Interest Rate: <b>{this.props.interestRate}%</b>
+              <br />
               monthly Payment:
               <b>
                 {this.props.monthlyPayment} {this.props.currency}
