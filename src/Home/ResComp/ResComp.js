@@ -19,7 +19,7 @@ class ResComp extends Component {
                 {this.props.principal} {this.props.currency}
               </b>{" "}
               <br />
-              Interest Rate: <b>{this.props.interestRate}%</b>
+              Interest Rate: <b>{this.props.interestRate * 100}%</b>
               <br />
               monthly Payment:
               <b>
