@@ -19,3 +19,6 @@
 .invalid-input {
   border: 1px solid #dc3545;
 }
+.invalid-input:focus {
+  outline: 1px solid #dc3545;
+}

@@ -34,8 +34,12 @@ class DataComp extends Component {
               <form>
                 <input
                   type="text"
-                  className="form-control"
-                  id="principal"
+                  className={
+                    this.state.principal <= 5000 && this.state.principal >= 500
+                      ? "form-control "
+                      : "form-control invalid-input"
+                  }
+                  id="principalINP"
                   placeholder="Loan Amount ($500 - $5000)"
                   value={this.state.principal}
                   onChange={this.handlePrincipalChange.bind(this)}
@@ -43,8 +47,12 @@ class DataComp extends Component {
                 <br />
                 <input
                   type="text"
-                  className="form-control"
-                  id="Months"
+                  className={
+                    this.state.months <= 24 && this.state.months >= 6
+                      ? "form-control "
+                      : "form-control invalid-input"
+                  }
+                  id="MonthsINP"
                   placeholder="Loan Duration ( 6 - 24 months)"
                   value={this.state.months}
                   onChange={this.handleMonthsChange.bind(this)}

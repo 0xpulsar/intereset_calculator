@@ -36,9 +36,20 @@ class Home extends Component {
         this.state.principal <= 5000 &&
         this.state.dataChange == "True"
       ) {
+        // //color change (remove class name)
+        // var principalINP = document.getElementById("principalINP");
+        // principalINP.classList.remove("invalid-input");
+        // var principalINP = document.getElementById("MonthsINP");
+        // MonthsINP.classList.remove("invalid-input");
         //Sending data
         this.handleDataEvent();
         console.log("Data send..");
+      } else {
+        //color change to red (add class name)
+        // var principalINP = document.getElementById("principalINP");
+        // principalINP.classList.add("invalid-input");
+        // var MonthsINP = document.getElementById("MonthsINP");
+        // MonthsINP.classList.add("invalid-input");
       }
     }, 2000);
   }
