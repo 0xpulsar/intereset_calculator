@@ -8,12 +8,14 @@ class DataComp extends Component {
     var value = event.target.value;
     if (!isNaN(value)) {
       this.setState({ principal: event.target.value });
+      this.props.principalDataEvent(event.target.value);
     }
   }
   handleMonthsChange(event) {
     var value = event.target.value;
-    if (!isNaN(value && value >= 6 && value <= 24)) {
+    if (!isNaN(value)) {
       this.setState({ months: event.target.value });
+      this.props.monthsDataEvent(event.target.value);
     }
   }
   handleSubmit(event) {
@@ -28,6 +30,9 @@ class DataComp extends Component {
       alert("Check input");
     }
   }
+
+  handleMonthsChange = this.handleMonthsChange.bind(this);
+  handlePrincipalChange = this.handlePrincipalChange.bind(this);
 
   handleSubmit = this.handleSubmit.bind(this);
   render() {
@@ -58,13 +63,13 @@ class DataComp extends Component {
                   onChange={this.handleMonthsChange.bind(this)}
                 />
                 <br />
-                <button
+                {/* <button
                   type="button"
                   className="btn btn-sub"
                   onClick={this.handleSubmit}
                 >
                   Submit
-                </button>
+                </button> */}
               </form>
             </b>
           </div>
