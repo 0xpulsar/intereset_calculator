@@ -55,3 +55,21 @@
     color: black;
   }
 }
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+.slider {
+  -webkit-appearance: none;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  outline: none;
+  width: 100%;
+  border-radius: 20px;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 35px;
+  height: 35px;
+  background-color: #35dc67;
+  border-radius: 20px;
+}
