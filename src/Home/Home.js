@@ -15,21 +15,23 @@ const initialState = {
 class Home extends Component {
   constructor(props) {
     super(props);
+    // initializing state
     this.state = initialState;
   }
 
   handlePrincipalDataEvent(data) {
+    // setting new principal value
     this.setState({ principal: data, dataChange: "True" });
   }
   handleMonthsDataEvent(data) {
-    // console.log(data);
+    // setting new month value
 
     this.setState({ months: data, dataChange: "True" });
   }
 
   componentDidMount() {
     this.interval = setInterval(() => {
-      //console.log(this.state.dataChange);
+      //Checking the conditions
       if (
         this.state.months >= 6 &&
         this.state.months <= 24 &&
@@ -37,21 +39,10 @@ class Home extends Component {
         this.state.principal <= 5000 &&
         this.state.dataChange == "True"
       ) {
-        // //color change (remove class name)
-        // var principalINP = document.getElementById("principalINP");
-        // principalINP.classList.remove("invalid-input");
-        // var principalINP = document.getElementById("MonthsINP");
-        // MonthsINP.classList.remove("invalid-input");
         //Sending data
         this.handleDataEvent();
         this.setState({ dataSending: "True" });
         console.log("Data send..");
-      } else {
-        //color change to red (add class name)
-        // var principalINP = document.getElementById("principalINP");
-        // principalINP.classList.add("invalid-input");
-        // var MonthsINP = document.getElementById("MonthsINP");
-        // MonthsINP.classList.add("invalid-input");
       }
     }, 2000);
   }
@@ -73,6 +64,7 @@ class Home extends Component {
       const rData = res.data;
       console.log("Data recevied..");
 
+      //updating with new values
       this.setState({
         interestRate: rData.interestRate,
         monthlyPayment: rData.monthlyPayment.amount,
@@ -84,6 +76,8 @@ class Home extends Component {
       });
     });
   }
+
+  //binding to access everywhere
   handleDataEvent = this.handleDataEvent.bind(this);
   handlePrincipalDataEvent = this.handlePrincipalDataEvent.bind(this);
   handleMonthsDataEvent = this.handleMonthsDataEvent.bind(this);
