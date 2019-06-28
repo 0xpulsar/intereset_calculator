@@ -29,7 +29,9 @@ class DataComp extends Component {
           <div className="card-body text-left">
             <b className="card-text">
               <div className="container">
-                <h4>Loan Amount (500 - 5000 {this.props.currency})</h4>
+                <h4>
+                  <b>Loan Amount (500 - 5000 {this.props.currency})</b>
+                </h4>
                 <div className="row">
                   <div className="col-sm">
                     <input
@@ -60,7 +62,9 @@ class DataComp extends Component {
                   </div>
                 </div>
                 <br />
-                <h4>Loan Duration ( 6 - 24 months)</h4>
+                <h4>
+                  <b>Loan Duration ( 6 - 24 months)</b>
+                </h4>
                 {/* months */}
                 <div className="row">
                   <div className="col-sm">
