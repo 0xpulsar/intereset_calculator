@@ -97,6 +97,7 @@ class Home extends Component {
               dataEvent={this.handleDataEvent}
               principalDataEvent={this.handlePrincipalDataEvent}
               monthsDataEvent={this.handleMonthsDataEvent}
+              currency={this.state.currency}
             />
           </div>
 

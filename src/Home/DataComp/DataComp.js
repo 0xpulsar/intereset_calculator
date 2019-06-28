@@ -29,7 +29,7 @@ class DataComp extends Component {
           <div className="card-body text-left">
             <b className="card-text">
               <div className="container">
-                <h4>Loan Amount ($500 - $5000)</h4>
+                <h4>Loan Amount (500 - 5000 {this.props.currency})</h4>
                 <div className="row">
                   <div className="col-sm">
                     <input
