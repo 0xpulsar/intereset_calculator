@@ -44,7 +44,7 @@ class DataComp extends Component {
                   type="text"
                   className="form-control"
                   id="principal"
-                  placeholder="Principal Amount ($500 - $5000)"
+                  placeholder="Loan Amount ($500 - $5000)"
                   value={this.state.principal}
                   onChange={this.handlePrincipalChange.bind(this)}
                 />
@@ -53,7 +53,7 @@ class DataComp extends Component {
                   type="text"
                   className="form-control"
                   id="Months"
-                  placeholder="Months ( 6 - 24)"
+                  placeholder="Loan Duration ( 6 - 24 months)"
                   value={this.state.months}
                   onChange={this.handleMonthsChange.bind(this)}
                 />
