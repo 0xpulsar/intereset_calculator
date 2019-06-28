@@ -36,7 +36,7 @@ class DataComp extends Component {
                   type="text"
                   className={
                     this.state.principal <= 5000 && this.state.principal >= 500
-                      ? "form-control "
+                      ? "form-control valid-input"
                       : "form-control invalid-input"
                   }
                   id="principalINP"
@@ -49,7 +49,7 @@ class DataComp extends Component {
                   type="text"
                   className={
                     this.state.months <= 24 && this.state.months >= 6
-                      ? "form-control "
+                      ? "form-control valid-input"
                       : "form-control invalid-input"
                   }
                   id="MonthsINP"

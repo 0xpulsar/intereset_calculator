@@ -19,15 +19,19 @@
   }
 }
 
-.form-control {
+.form-control,
+.form-control:focus {
   border-radius: 15px;
 }
 
-.invalid-input {
+.invalid-input,
+.invalid-input:focus {
   border: 1px solid #dc3545;
 }
-.invalid-input:focus {
-  outline: 1px solid #dc3545;
+
+.valid-input,
+.valid-input:focus {
+  border: 1px solid #35dc67;
 }
 
 .loading-invisible {
