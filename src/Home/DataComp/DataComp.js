@@ -78,14 +78,16 @@ class DataComp extends Component {
                     />
                   </div>
                   <div className="col-sm">
-                    <input
-                      type="range"
-                      min="6"
-                      max="24"
-                      onChange={this.handleMonthsChange.bind(this)}
-                      className="slider"
-                      id="montRange"
-                    />
+                    <div class="slidecontainer">
+                      <input
+                        type="range"
+                        min="6"
+                        max="24"
+                        onChange={this.handleMonthsChange.bind(this)}
+                        className="slider"
+                        id="montRange"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
