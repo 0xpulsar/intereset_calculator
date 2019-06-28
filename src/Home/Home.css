@@ -15,8 +15,7 @@
     box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
   }
 }
-.btn-sub {
-  background: #dc3545;
-  color: white;
-  border-radius: 15px;
+
+.invalid-input {
+  border: 1px solid #dc3545;
 }
